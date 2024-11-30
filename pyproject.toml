@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 pandas = "^2.2.3"
+lshashpy3 = "^0.0.9"
+simhash = "^2.1.2"
 
 
 [tool.poetry.group.dev.dependencies]
