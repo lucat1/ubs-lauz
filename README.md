@@ -1,0 +1,6 @@
+# Development
+
+```
+$ poetry shell
+$ code .
+```
