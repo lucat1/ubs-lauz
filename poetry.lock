@@ -640,6 +640,17 @@ files = [
 ]
 
 [[package]]
+name = "disjoint-set"
+version = "0.8.0"
+description = "Disjoint set data structure implementation for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "disjoint_set-0.8.0-py3-none-any.whl", hash = "sha256:2f802cd3cd03c651921bde18fa73d316c22104b09e5eab157e30ba322a7aeeae"},
+    {file = "disjoint_set-0.8.0.tar.gz", hash = "sha256:ce37119ca6be07671c4e51410a28511193ec168580ff373b0819d31b34b47728"},
+]
+
+[[package]]
 name = "executing"
 version = "2.1.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -813,7 +824,6 @@ prompt_toolkit = ">=3.0.41,<3.1.0"
 pygments = ">=2.4.0"
 stack_data = "*"
 traitlets = ">=5.13.0"
-typing_extensions = {version = ">=4.6", markers = "python_version < \"3.12\""}
 
 [package.extras]
 all = ["ipython[black,doc,kernel,matplotlib,nbconvert,nbformat,notebook,parallel,qtconsole]", "ipython[test,test-extra]"]
@@ -1607,10 +1617,7 @@ files = [
 ]
 
 [package.dependencies]
-numpy = [
-    {version = ">=1.23.2", markers = "python_version == \"3.11\""},
-    {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
-]
+numpy = {version = ">=1.26.0", markers = "python_version >= \"3.12\""}
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
 tzdata = ">=2022.7"
@@ -2414,17 +2421,6 @@ files = [
 ]
 
 [[package]]
-name = "typing-extensions"
-version = "4.12.2"
-description = "Backported and Experimental Type Hints for Python 3.8+"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"},
-    {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
-]
-
-[[package]]
 name = "tzdata"
 version = "2024.2"
 description = "Provider of IANA time zone data"
@@ -2528,5 +2524,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.11"
-content-hash = "5faaa720daa9dd09187fef087742ffdee8a6387caed362dcd2a325f702abce59"
+python-versions = "^3.12"
+content-hash = "df2bf081b593ea2bf499a76853ce7a98dcffb3f4052da7c96bee7e198e621423"

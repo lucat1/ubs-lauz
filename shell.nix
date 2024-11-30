@@ -1,11 +1,10 @@
-with import <nixpkgs> { };
+with import <nixpkgs> { allowUnfree = true; };
 
 pkgs.mkShell {
   name = "lauz";
   buildInputs = with pkgs; [
     vscode
-    poetry
-    python313
+    (poetry.override { python3 = pkgs.python312; })
   ];
  
   NIXOS_OZONE_WL="1";
