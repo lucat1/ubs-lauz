@@ -4,10 +4,8 @@ pkgs.mkShell {
   name = "lauz";
   buildInputs = with pkgs; [
     vscode
+    poetry
     python313
-    (with pyton313Packages; [
-      pandas
-    ])
   ];
  
   NIXOS_OZONE_WL="1";
